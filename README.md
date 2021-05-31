@@ -4,6 +4,10 @@
 
 ---
 
-**SHAP (SHapley Additive exPlanations)** is a game theoretic approach to explain the output of any machine learning model. It connects optimal credit allocation with local explanations using the classic Shapley values from game theory and their related extensions (see [papers](#citations) for details and citations).
+**NeoPGx** performs ... using [R](https://www.r-project.org/) and [Shiny](https://shiny.rstudio.com/).(see [papers](#citations) for details and citations). Developed by <a href="http://rady.ucsd.edu/people/faculty/nijs/" target="_blank">Vincent Nijs</a>. You can reach me at radiant@rady.ucsd.edu. Full source code for Radiant is available on <a href="https://github.com/radiant-rstats" target="_blank">GitHub</a>.
 
-<!--**SHAP (SHapley Additive exPlanations)** is a unified approach to explain the output of any machine learning model. SHAP connects game theory with local explanations, uniting several previous methods [1-7] and representing the only possible consistent and locally accurate additive feature attribution method based on expectations (see our [papers](#citations) for details and citations).-->
+## License
+
+NeoPGx is licensed under the <a href="https://tldrlegal.com/license/gnu-affero-general-public-license-v3-(agpl-3.0)" target="\_blank">AGPLv3</a>. As a summary, the AGPLv3 license requires, attribution, including copyright and license information in copies of the software, stating changes if the code is modified, and disclosure of all source code. Details are in the COPYING file. See our [papers](#citations) for details and citations.
+
+## Data References
