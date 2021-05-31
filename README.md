@@ -15,7 +15,8 @@
 ## How to use 
 NeoPGx is an open-source platform-independent browser-based interface for pharmacogenomics in R. The application is based on the Shiny package and can be run locally or on a server. Please use the [issue tracker](https://github.com/Andreater/NeoPGx/issues) on GitHub to suggest enhancements or report problems.
 
-## Data References
+## Diplotype assignation
+The automatic identification of diplotypes based on genotypes at selected genes is based on CYP genes following [CPIC](https://cpicpgx.org/) allele definition. All possible diplotypes are evaluated for their enzymatic phenotype based on [PharmVar data](https://www.pharmvar.org/) and the frequency in the [reference population](https://cpicpgx.org/).
 
 ## License
 
