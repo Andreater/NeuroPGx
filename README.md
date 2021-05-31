@@ -13,7 +13,7 @@
 - Programming: Integrate NeoPGx's analysis functions with your own R-code
 
 ## How to use 
-NeoPGx is an open-source platform-independent browser-based interface for pharmacogenomics in R. The application is based on the Shiny package and can be run locally or on a server. Please use the issue tracker on GitHub to suggest enhancements or report problems: .
+NeoPGx is an open-source platform-independent browser-based interface for pharmacogenomics in R. The application is based on the Shiny package and can be run locally or on a server. Please use the [issue tracker](https://github.com/Andreater/NeoPGx/issues) on GitHub to suggest enhancements or report problems.
 
 ## Data References
 
