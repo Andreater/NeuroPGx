@@ -4,9 +4,16 @@
 
 ---
 
-**NeoPGx** helps to identify pharmacogenomics profiles based on subjects genotype of five core genes(**???**). The tool was developed using [R](https://www.r-project.org/) and [Shiny](https://shiny.rstudio.com/), see [papers](#papers) for details and citations. Developed by the <a href="https://www.hsantalucia.it/en/molecular-genetics-laboratory-uildm" target="_blank">Genomic Medicine Laboratory</a> at <a href="https://www.hsantalucia.it/en" target="_blank">IRCCS Santa Lucia Foundation</a>. You can reach us at **email please**.
+**NeoPGx** helps to identify pharmacogenomics profiles based on subjects genotype of five core genes(**???**). NeoPGx was developed using [R](https://www.r-project.org/) and [Shiny](https://shiny.rstudio.com/), see [papers](#papers) for details and citations. Developed by the <a href="https://www.hsantalucia.it/en/molecular-genetics-laboratory-uildm" target="_blank">Genomic Medicine Laboratory</a> at <a href="https://www.hsantalucia.it/en" target="_blank">IRCCS Santa Lucia Foundation</a>. You can reach us at **email please**.
 
-## Install
+## Key features
+- Explore: Quickly and easily summarize, visualize, and analyze your data
+- Cross-platform: It runs in a browser on Windows, Mac, and Linux
+- Reproducible: Recreate results and share work with others
+- Programming: Integrate NeoPGx's analysis functions with your own R-code
+
+## How to use 
+NeoPGx is an open-source platform-independent browser-based interface for pharmacogenomics in R. The application is based on the Shiny package and can be run locally or on a server. Please use the issue tracker on GitHub to suggest enhancements or report problems: For other questions and comments please use .
 
 ## Data References
 
