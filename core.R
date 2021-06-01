@@ -7,6 +7,11 @@ pheno = readRDS(file = "data/reference/pheno.RDS")
 diplo_assign <- function(input, altab, frq, pheno) {
   #####Input preparation####
   
+  # Remove genes that are not present in input
+  name_input = sort(unique(input$Gene))
+  altab = altab[name_input]
+  frq   = frq[name_input]
+  
   # arrangiato e omessi i na
   input = input %>%
     mutate(Genotype = ifelse(Genotype == "-/-", "del/del", Genotype)) %>% # This string deals with deletions
