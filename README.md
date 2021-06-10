@@ -4,7 +4,7 @@
 
 ---
 
-**NeuroPGx** helps to identify pharmacogenomic profiles based on subjects genotype of five core genes(**???**). NeuroPGx was developed using [R](https://www.r-project.org/) and [Shiny](https://shiny.rstudio.com/), see [papers](#papers) for details and citations. Developed by the <a href="https://www.hsantalucia.it/en/molecular-genetics-laboratory-uildm" target="_blank">Genomic Medicine Laboratory</a> at <a href="https://www.hsantalucia.it/en" target="_blank">IRCCS Santa Lucia Foundation</a>. You can reach us at **email please**.
+**NeuroPGx** helps to identify pharmacogenomic profiles based on subjects genotype of five core genes(**???**). NeuroPGx was developed using [R](https://www.r-project.org/) and [Shiny](https://shiny.rstudio.com/), see [papers section](#papers) for details and citations. Developed by the <a href="https://www.hsantalucia.it/en/molecular-genetics-laboratory-uildm" target="_blank">Genomic Medicine Laboratory</a> at <a href="https://www.hsantalucia.it/en" target="_blank">IRCCS Santa Lucia Foundation</a>. You can reach us at **email please**.
 
 ## Key features
 - Explore: Quickly and easily summarize, visualize, and analyze your data
