@@ -1,10 +1,8 @@
 # References ----
 load(file = "data/reference/drugs.rdata")
-data  = file.choose() %>% read.csv # questa e quella sotto vanno eliminate nella routine del programma
-data  = data %>% dplyr::select(-c(X))
 
 ####Preprocess data####
-pharm_sum <- function(ac, comb_drugs, diplo_drugs, pheno_drugs) {
+pharm_sum <- function(data, comb_drugs, diplo_drugs, pheno_drugs) {
   data = data %>% 
     mutate(Phenotype1 = case_when(Phenotype == "Intermediate Metabolizer" ~ "IM",
                                   Phenotype == "Poor Metabolizer" ~ "PM",
@@ -42,7 +40,9 @@ pharm_sum <- function(ac, comb_drugs, diplo_drugs, pheno_drugs) {
   # Final combined Dataframe
   combined = combined %>% 
     reduce(bind_rows) %>% 
-    filter(Outcome != "not available")
+    filter(Outcome != "not available") %>% 
+    rename(Gene = Combined_genes,
+           Phenotype = Combined_phenotype)
   
   rm(subject, grid, comb_drugs, sample.list)
   
@@ -74,5 +74,3 @@ pharm_sum <- function(ac, comb_drugs, diplo_drugs, pheno_drugs) {
   
   return(drug.list)
 }
-
-drug.list = pharm_sum(ac = data,comb_drugs = comb_drugs, diplo_drugs = diplo_drugs, pheno_drugs = pheno_drugs)
