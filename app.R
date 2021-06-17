@@ -12,10 +12,36 @@ ui <- dashboardPage(dashboardHeader(title = "NeuroPGx"),
                                                label   = "Load Data",
                                                accept  = c(".csv", ".tsv", ".xlsx"))
                     ),
-                    dashboardBody(fluidRow(box(title  = "How it works",
-                                               width  = 6,
-                                               status = "info",
-                                               "Box content Probably infos"),
+                    dashboardBody(fluidRow(tabBox(title  = "About",
+                                                  id     = "tabset2",
+                                                  tabPanel(title = "Workflow",
+                                                           width = 6,
+                                                           status = "info",
+                                                           fluidRow(column(width = 6, align = "center", tags$img(src = "Workflow image.svg")),
+                                                                    column(width = 6, h4("How to use"),
+                                                                                      p(style="text-align: justify;",
+                                                                                      "Please upload an input file using the browse button on the sidebar.
+                                                                                         Refer to the sample input files in the samples directory to prepare your input file.",br(), 
+                                                                                        "The software will run even if you miss genotype info for some of the five core genes.",br()),
+                                                                                        p(style="text-align: justify;",
+                                                                                          "Export the results using the download buttons below each result box.")))),
+                                                  tabPanel(title  = "Software Description",
+                                                           width  = 6,
+                                                           status = "info",
+                                                           p(style="text-align: justify;",
+                                                             "NeuroPGx software performed the automated identification of all possible diplotypes
+                                                             compatible with genotypes at each CYP gene included in the virtual NeuroPGx Panel.
+                                                             Basing on population characteristics, the software selects the most likely diplotype-phenotype.
+                                                             Otherwise, all possible diplotype-phenotype combinations were identified and reported in the output file.",br(),
+                                                             "The NeuroPGx software output files provide information about:",
+                                                             tags$ol(
+                                                                 tags$li("the genotypes at evaluated SNPs."), 
+                                                                 tags$li("the main diplotypes at CYP genes and corresponding metabolization phenotypes."), 
+                                                                 tags$li("the list of possible (rare) diplotypes and corresponding metabolization phenotypes."))),
+                                                           p(tags$a(href="https://cpicpgx.org/", "CPIC guidelines"),
+                                                             "(last accession: 30 May 2021)", br(),
+                                                             tags$a(href="https://www.pharmgkb.org/page/dpwg", "DPWG guidelines"),
+                                                             "(last accession: 30 May 2021)"))),
                                            box(title  = "Samples",
                                                status = "primary",
                                                width  = 6,
@@ -56,6 +82,7 @@ server <- function(input, output) {
                tsv  = vroom::vroom(input$file$datapath, delim = "\t"),
                validate("Invalid file; Please upload a .xlsx, .csv or .tsv file"))
     })
+    
     # Sample preview
     output$sample <- renderDT({data()}, options = list(pageLength = 5), filter = "top")
     
@@ -121,6 +148,7 @@ server <- function(input, output) {
     
     # Show plot
     output$ehr1 <- renderPlot({pl2()})
+    
     
 }
 
