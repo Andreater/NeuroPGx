@@ -13,21 +13,21 @@ NeuroPGx was developed using [R](https://www.r-project.org/) and [Shiny](https:/
   <img src="https://github.com/Andreater/FSL-PHARM/blob/main/www/Workflow image.svg" width="300" />
 </p>
 
+## Diplotype assignation
+The automatic identification of diplotypes based on genotypes at selected SNPs is based on CYP genes following [CPIC](https://cpicpgx.org/) allele definition. All possible diplotypes are evaluated for their enzymatic phenotype based on [PharmVar data](https://www.pharmvar.org/) and the frequency in the [reference population](https://cpicpgx.org/).
+
 ## Key features
 - Explore: Quickly and easily summarize, visualize, and analyze your data
-- Cross-platform: It runs in a browser on Windows, Mac, and Linux
+- Cross-platform: It runs in a browser on every operating system
 - Reproducible: Recreate results and share work with others
 - Programming: Integrate NeuroPGx's analysis functions with your own R-code
 
 ## How to use 
-NeuroPGx is an open-source platform-independent browser-based interface for pharmacogenomics in R. The application is based on the Shiny package and can be run locally or on a server. If you want to run NeuroPGx locally you should install the latest version of [R](https://www.r-project.org/) and [Rstudio](https://www.rstudio.com/). For local usage, download the entire repository and then run <i>app.R</i>. Please use the [issue tracker](https://github.com/Andreater/NeuroPGx/issues) on GitHub to suggest enhancements or report problems.
-
-## Diplotype assignation
-The automatic identification of diplotypes based on genotypes at selected genes is based on CYP genes following [CPIC](https://cpicpgx.org/) allele definition. All possible diplotypes are evaluated for their enzymatic phenotype based on [PharmVar data](https://www.pharmvar.org/) and the frequency in the [reference population](https://cpicpgx.org/).
+NeuroPGx is an open-source platform-independent browser-based interface for pharmacogenomics in R. The application is based on the Shiny package and can be run locally or on a server. If you want to run NeuroPGx locally you should install the latest version of [R](https://www.r-project.org/) and [Rstudio](https://www.rstudio.com/), download the entire repository and then run <i>app.R</i>. Please use the [issue tracker](https://github.com/Andreater/NeuroPGx/issues) on GitHub to suggest enhancements or report problems.
 
 ## License
 
-NeuroPGx is licensed under the <a href="https://tldrlegal.com/license/gnu-affero-general-public-license-v3-(agpl-3.0)" target="\_blank">AGPLv3</a>. As a summary, the AGPLv3 license requires, attribution, including copyright and license information in copies of the software, stating changes if the code is modified, and disclosure of all source code. Details are in the LICENSE file. See our [papers](#citations) for details and citations.
+NeuroPGx is licensed under the <a href="https://tldrlegal.com/license/gnu-affero-general-public-license-v3-(agpl-3.0)" target="\_blank">AGPLv3 license</a>. As a summary, the AGPLv3 license requires attribution, including copyright and license information in copies of the software, stating changes if the code is modified, and disclosure of all source code. Details are in the LICENSE file. See our [papers](#citations) for details and citations.
 
 ## Papers
 
