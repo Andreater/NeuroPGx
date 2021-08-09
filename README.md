@@ -7,7 +7,7 @@
 **NeuroPGx** is a software for the identification of diplotypes compatible with genotypes at selected SNPs involved in neuropsychiatric drug metabolisms. It helps in pharmacogenomics evaluation of samples, providing information about: (I) the genotypes at evaluated SNPs, (II) the main diplotypes at CYP genes and corresponding metabolization phenotypes, (III) the list of neuropsychiatric drugs with recommended dosage adjustment, (IV) the list of
 possible (rare) diyplotypes and corresponding metabolization phenotypes.
 
-NeuroPGx was developed using [R](https://www.r-project.org/) and [Shiny](https://shiny.rstudio.com/), see [papers section](#papers) for details and citations. Developed by the <a href="https://www.hsantalucia.it/en/molecular-genetics-laboratory-uildm" target="_blank">Genomic Medicine Laboratory</a> at <a href="https://www.hsantalucia.it/en" target="_blank">I.R.C.C.S. Santa Lucia Foundation</a>. You can reach us at **a.termine@hsantalucia.it**.
+NeuroPGx is an open-source platform-independent browser-based interface for pharmacogenomics in R. The application is based on the Shiny package and can be run locally or on a server. NeuroPGx was developed using [R](https://www.r-project.org/) and [Shiny](https://shiny.rstudio.com/), see [papers section](#papers) for details and citations. Developed by the <a href="https://www.hsantalucia.it/en/molecular-genetics-laboratory-uildm" target="_blank">Genomic Medicine Laboratory</a> at <a href="https://www.hsantalucia.it/en" target="_blank">I.R.C.C.S. Santa Lucia Foundation</a>. You can reach us at **a.termine@hsantalucia.it**. Please use the [issue tracker](https://github.com/Andreater/NeuroPGx/issues) on GitHub to suggest enhancements or report problems.
 
 <p align="center">
   <img src="https://github.com/Andreater/FSL-PHARM/blob/main/www/Workflow image.svg" width="300" />
@@ -22,9 +22,9 @@ The automatic identification of diplotypes based on genotypes at selected SNPs i
 - Reproducible: Recreate results and share work with others
 - Programming: Integrate NeuroPGx's analysis functions with your own R-code
 
-## How to install
+## How to install and use
 
-- To set the environment for NeuroPGx to work properly, R and RStudio must be installed.
+- To set the environment for NeuroPGx local use, R and RStudio must be installed.
 - 1. Download [R](https://cran.r-project.org/) for your operating system (Windows, Linux or macOS) and install using the default settings.
 - 2. Download [RStudio](https://www.rstudio.com/products/rstudio/download/) Free Desktop version and install using the default settings.
 
@@ -35,9 +35,6 @@ The automatic identification of diplotypes based on genotypes at selected SNPs i
 <p align="center">
   <img src="https://github.com/Andreater/FSL-PHARM/blob/main/docs/Run app example.png" width="800" />
 </p>
-
-## How to use 
-NeuroPGx is an open-source platform-independent browser-based interface for pharmacogenomics in R. The application is based on the Shiny package and can be run locally or on a server. If you want to run NeuroPGx locally you should install the latest version of [R](https://www.r-project.org/) and [Rstudio](https://www.rstudio.com/), download the entire repository and then run <i>app.R</i>. Please use the [issue tracker](https://github.com/Andreater/NeuroPGx/issues) on GitHub to suggest enhancements or report problems.
 
 ### Input file preparation
 
