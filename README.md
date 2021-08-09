@@ -46,7 +46,7 @@ Sample2 |CYP2C9 |rs1057910 |
 Sample2 |CYP2D6 |rs1065852 |
 Sample2 |CYP3A5 |rs10264272|
 
-Please note that we used only one SNP for each Gene to simplify the provided example. You can find a complete list of examples in the xxx folder.
+Please note that we used only one SNP for each Gene to simplify the provided example. You can find a complete list of examples in the [samples](NeuroPGx/data/samples/) folder.
 
 ## License
 
