@@ -33,7 +33,7 @@ The automatic identification of diplotypes based on genotypes at selected SNPs i
 - Open the `app.R` file using RStudio, then click on the green `run app` button at the top-right corner of the central panel window, as shown in the image below.
 
 <p align="center">
-  <img src="https://github.com/Andreater/FSL-PHARM/blob/main/docs/Run app.png" width="800" />
+  <img src="https://github.com/Andreater/FSL-PHARM/blob/main/docs/Run app example.png" width="800" />
 </p>
 
 ## How to use 
