@@ -3,18 +3,19 @@
 </p>
 
 ---
-
+<p align="justify">
 **NeuroPGx** is a software for the identification of diplotypes compatible with genotypes at selected SNPs involved in neuropsychiatric drug metabolisms. It helps in pharmacogenomics evaluation of samples, providing information about: (I) the genotypes at evaluated SNPs, (II) the main diplotypes at CYP genes and corresponding metabolization phenotypes, (III) the list of neuropsychiatric drugs with recommended dosage adjustment, (IV) the list of
 possible (rare) diyplotypes and corresponding metabolization phenotypes.
 
 NeuroPGx is an open-source platform-independent browser-based interface for pharmacogenomics in R. The application is based on the Shiny package and can be run locally or on a server. NeuroPGx was developed using [R](https://www.r-project.org/) and [Shiny](https://shiny.rstudio.com/), see [papers section](#papers) for details and citations. Developed by the <a href="https://www.hsantalucia.it/en/molecular-genetics-laboratory-uildm" target="_blank">Genomic Medicine Laboratory</a> at <a href="https://www.hsantalucia.it/en" target="_blank">I.R.C.C.S. Santa Lucia Foundation</a>. You can reach us at **a.termine@hsantalucia.it**. Please use the [issue tracker](https://github.com/Andreater/NeuroPGx/issues) on GitHub to suggest enhancements or report problems.
-
+</p>
 <p align="center">
   <img src="https://github.com/Andreater/FSL-PHARM/blob/main/www/Workflow image.svg" width="300" />
 </p>
 
 ## Diplotype assignation
-The automatic identification of diplotypes based on genotypes at selected SNPs is based on CYP genes following [CPIC](https://cpicpgx.org/) allele definition. All possible diplotypes are evaluated for their enzymatic phenotype based on [PharmVar data](https://www.pharmvar.org/) and the frequency in the [reference population](https://cpicpgx.org/).
+<p align="justify">
+ The automatic identification of diplotypes based on genotypes at selected SNPs is based on CYP genes following [CPIC](https://cpicpgx.org/) allele definition. All possible diplotypes are evaluated for their enzymatic phenotype based on [PharmVar data](https://www.pharmvar.org/) and the frequency in the [reference population](https://cpicpgx.org/).</p>
 
 ## Key features
 - Explore: Quickly and easily summarize, visualize, and analyze your data
@@ -38,7 +39,8 @@ The automatic identification of diplotypes based on genotypes at selected SNPs i
 
 ### Input file preparation
 
-Your input file can be simply prepared with an Excel spreadsheet. It should have 4 columns: Sample, Gene, rsID, Genotype. Put your samples' ID in the Sample column and fill the Gene and rsID columns with Gene Symbols and dbSNP ids. Please note that you can find the complete list of SNPs in the [paper](#Papers). Genotype column should be filled with genotype information for each sample. A `/` should be used as separator. Deletions in a SNP can be coded as `-/-`  or ` A/-` while more complex configurations, such as `CTT/CTT` can be easily reported and are well managed by the NeuroPGx software. NeuroPGx accepts `.tsv`, `.csv` and `.xlsx` files. If you need a more detailed example, we **strongly suggest** you to check the `.xlsx` example files provided in the [samples](https://github.com/Andreater/NeuroPGx/tree/main/data/samples) folder to simplify your data preparation. Your input file should have the following structure:
+<p align="justify">
+Your input file can be simply prepared with an Excel spreadsheet. It should have 4 columns: Sample, Gene, rsID, Genotype. Put your samples' ID in the Sample column and fill the Gene and rsID columns with Gene Symbols and dbSNP ids. Please note that you can find the complete list of SNPs in the [paper](#Papers). Genotype column should be filled with genotype information for each sample. A `/` should be used as separator. Deletions in a SNP can be coded as `-/-`  or ` A/-` while more complex configurations, such as `CTT/CTT` can be easily reported and are well managed by the NeuroPGx software. NeuroPGx accepts `.tsv`, `.csv` and `.xlsx` files. If you need a more detailed example, we **strongly suggest** you to check the `.xlsx` example files provided in the [samples](https://github.com/Andreater/NeuroPGx/tree/main/data/samples) folder to simplify your data preparation. Your input file should have the following structure: </p>
 
 Sample  |Gene   |rsID      |Genotype|
 --------|------ |----------|--------|
@@ -56,8 +58,8 @@ Sample2 |CYP3A5 |rs10264272|C/T     |
 Please note that we used only one SNP for each Gene to simplify the provided example. You can find a complete set of examples in the [samples](https://github.com/Andreater/NeuroPGx/tree/main/data/samples) folder.
 
 ## License
-
-NeuroPGx is licensed under the <a href="https://tldrlegal.com/license/gnu-affero-general-public-license-v3-(agpl-3.0)" target="\_blank">AGPLv3 license</a>. As a summary, the AGPLv3 license requires attribution, including copyright and license information in copies of the software, stating changes if the code is modified, and disclosure of all source code. Details are in the LICENSE file. See our [papers](#Papers) section for details and citations.
+<p align="justify">
+NeuroPGx is licensed under the <a href="https://tldrlegal.com/license/gnu-affero-general-public-license-v3-(agpl-3.0)" target="\_blank">AGPLv3 license</a>. As a summary, the AGPLv3 license requires attribution, including copyright and license information in copies of the software, stating changes if the code is modified, and disclosure of all source code. Details are in the LICENSE file. See our [papers](#Papers) section for details and citations.</p>
 
 ## Papers
 
