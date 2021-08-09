@@ -55,8 +55,7 @@ Sample2 |CYP3A5 |rs10264272|C/T     |
 Please note that we used only one SNP for each Gene to simplify the provided example. You can find a complete set of examples in the [samples](https://github.com/Andreater/NeuroPGx/tree/main/data/samples) folder.
 
 ## License
-<p align="justify">
-NeuroPGx is licensed under the <a href="https://tldrlegal.com/license/gnu-affero-general-public-license-v3-(agpl-3.0)" target="\_blank">AGPLv3 license</a>. As a summary, the AGPLv3 license requires attribution, including copyright and license information in copies of the software, stating changes if the code is modified, and disclosure of all source code. Details are in the LICENSE file. See our [papers](#Papers) section for details and citations.</p>
+NeuroPGx is licensed under the <a href="https://tldrlegal.com/license/gnu-affero-general-public-license-v3-(agpl-3.0)" target="\_blank">AGPLv3 license</a>. As a summary, the AGPLv3 license requires attribution, including copyright and license information in copies of the software, stating changes if the code is modified, and disclosure of all source code. Details are in the LICENSE file. See our [papers](#Papers) section for details and citations.
 
 ## Papers
 
