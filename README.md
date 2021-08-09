@@ -22,14 +22,13 @@ The automatic identification of diplotypes based on genotypes at selected SNPs i
 - Reproducible: Recreate results and share work with others
 - Programming: Integrate NeuroPGx's analysis functions with your own R-code
 
-## How to use 
-NeuroPGx is an open-source platform-independent browser-based interface for pharmacogenomics in R. The application is based on the Shiny package and can be run locally or on a server. If you want to run NeuroPGx locally you should install the latest version of [R](https://www.r-project.org/) and [Rstudio](https://www.rstudio.com/), download the entire repository and then run <i>app.R</i>. Please use the [issue tracker](https://github.com/Andreater/NeuroPGx/issues) on GitHub to suggest enhancements or report problems.
+## How to install
 
-### How to install (Suggested)
+To set the environment for NeuroPGx to work properly, R and RStudio must be installed.
+1. Download R from CRAN for your operating system (Windows, Linux or macOS) and install using the default settings.
+2. Download RStudio Free Desktop version from rstudio.com and install using the default settings.
 
-### Conda installation
-
-### Input file preparation
+## Input file preparation
 
 Your input file can be simply prepared with an Excel spreadsheet. It should have 4 columns: Sample, Gene, rsID, Genotype. Put your samples' ID in the Sample column and fill the Gene and rsID columns with Gene Symbols and dbSNP ids. Please note that you can find the complete list of SNPs in the [paper](#Papers). Genotype column should be filled with genotype information for each sample. A `/` should be used as separator. Deletions in a SNP can be coded as `-/-`  or ` A/-` while more complex configurations, such as `CTT/CTT` can be easily reported and are well managed by the NeuroPGx software. NeuroPGx accepts `.tsv`, `.csv` and `.xlsx` files. If you need a more detailed example, we **strongly suggest** you to check the `.xlsx` example files provided in the [samples](https://github.com/Andreater/NeuroPGx/tree/main/data/samples) folder to simplify your data preparation. Your input file should have the following structure:
 
@@ -46,7 +45,10 @@ Sample2 |CYP2C9 |rs1057910 |A/A     |
 Sample2 |CYP2D6 |rs1065852 |G/G     |
 Sample2 |CYP3A5 |rs10264272|C/T     |
 
-Please note that we used only one SNP for each Gene to simplify the provided example. You can find a complete list of examples in the [samples](https://github.com/Andreater/NeuroPGx/tree/main/data/samples) folder.
+Please note that we used only one SNP for each Gene to simplify the provided example. You can find a complete set of examples in the [samples](https://github.com/Andreater/NeuroPGx/tree/main/data/samples) folder.
+
+## How to use 
+NeuroPGx is an open-source platform-independent browser-based interface for pharmacogenomics in R. The application is based on the Shiny package and can be run locally or on a server. If you want to run NeuroPGx locally you should install the latest version of [R](https://www.r-project.org/) and [Rstudio](https://www.rstudio.com/), download the entire repository and then run <i>app.R</i>. Please use the [issue tracker](https://github.com/Andreater/NeuroPGx/issues) on GitHub to suggest enhancements or report problems.
 
 ## License
 
