@@ -35,6 +35,7 @@ The automatic identification of diplotypes based on genotypes at selected SNPs i
   <img src="https://github.com/Andreater/FSL-PHARM/blob/main/docs/Run app.png" width="800" />
 </p>
 
+
 ## How to use 
 NeuroPGx is an open-source platform-independent browser-based interface for pharmacogenomics in R. The application is based on the Shiny package and can be run locally or on a server. If you want to run NeuroPGx locally you should install the latest version of [R](https://www.r-project.org/) and [Rstudio](https://www.rstudio.com/), download the entire repository and then run <i>app.R</i>. Please use the [issue tracker](https://github.com/Andreater/NeuroPGx/issues) on GitHub to suggest enhancements or report problems.
 
