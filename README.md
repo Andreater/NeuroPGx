@@ -24,9 +24,13 @@ The automatic identification of diplotypes based on genotypes at selected SNPs i
 
 ## How to install
 
-To set the environment for NeuroPGx to work properly, R and RStudio must be installed.
+- To set the environment for NeuroPGx to work properly, R and RStudio must be installed.
 1. Download [R](https://cran.r-project.org/) for your operating system (Windows, Linux or macOS) and install using the default settings.
 2. Download [RStudio](https://www.rstudio.com/products/rstudio/download/) Free Desktop version and install using the default settings.
+
+- To use the NeuroPGx software, download this repository from [here](https://github.com/Andreater/NeuroPGx/archive/refs/heads/main.zip) or by clicking the green `Code` button and selecting `Download ZIP`.
+- Unpack the downloaded ZIP file to your preferred path.
+- Open the app.R file using RStudio, then click on the green “run app” button at the top-right corner of the central panel window.
 
 ## How to use 
 NeuroPGx is an open-source platform-independent browser-based interface for pharmacogenomics in R. The application is based on the Shiny package and can be run locally or on a server. If you want to run NeuroPGx locally you should install the latest version of [R](https://www.r-project.org/) and [Rstudio](https://www.rstudio.com/), download the entire repository and then run <i>app.R</i>. Please use the [issue tracker](https://github.com/Andreater/NeuroPGx/issues) on GitHub to suggest enhancements or report problems.
