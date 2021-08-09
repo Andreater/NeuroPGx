@@ -26,8 +26,8 @@ NeuroPGx is an open-source platform-independent browser-based interface for phar
 ## How to install and use
 
 - To set the environment for NeuroPGx local use, R and RStudio must be installed.
-- 1. Download [R](https://cran.r-project.org/) for your operating system (Windows, Linux or macOS) and install using the default settings.
-- 2. Download [RStudio](https://www.rstudio.com/products/rstudio/download/) Free Desktop version and install using the default settings.
+ 1. Download [R](https://cran.r-project.org/) for your operating system (Windows, Linux or macOS) and install using the default settings.
+ 2. Download [RStudio](https://www.rstudio.com/products/rstudio/download/) Free Desktop version and install using the default settings.
 
 - To use the NeuroPGx software, download this repository from [here](https://github.com/Andreater/NeuroPGx/archive/refs/heads/main.zip) or by clicking the green `Code` button and selecting `Download ZIP`.
 - Unpack the downloaded ZIP file to your preferred path.
