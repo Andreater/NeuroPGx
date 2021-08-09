@@ -31,22 +31,22 @@ NeuroPGx is an open-source platform-independent browser-based interface for phar
 
 ### Input file preparation
 
-Simply preapare your data in an input file with 4 columns: Sample, Gene, rsID, Genotype. Put your samples' ID in the Sample column and fill the Gene and rsID columns with Gene Symbols and dbSNP ids. Please note that you can find the complete list of SNPs in the **paper** listed in the [paper](#Papers) section. Genotype column should be filled with genotype information for each sample. A / should be used as separator. Deletions in a SNP can be coded as -/- or A/- while more complex configuration, such as CTT/CTT can be easily reported. NeuroPGx accepts .tsv, .csv and .xlsx files. We suggest you to use .xlsx files to manually prepare your inputs. 
+Simply preapare your data in an input file with 4 columns: Sample, Gene, rsID, Genotype. Put your samples' ID in the Sample column and fill the Gene and rsID columns with Gene Symbols and dbSNP ids. Please note that you can find the complete list of SNPs in the **paper** listed in the [paper](#Papers) section. Genotype column should be filled with genotype information for each sample. A / should be used as separator. Deletions in a SNP can be coded as `-/-`  or ` A/-` while more complex configuration, such as CTT/CTT can be easily reported. NeuroPGx accepts .tsv, .csv and .xlsx files. We suggest you to use .xlsx files to manually prepare your inputs. However, we **strongly suggest** you to check the .xlsx example files provided in the [samples](https://github.com/Andreater/NeuroPGx/tree/main/data/samples) folder to simplify your data preparation.
 
 Sample  |Gene   |rsID      |Genotype|
 --------|------ |----------|--------|
-Sample1 |CYP2B6 |rs28399499|T/T
-Sample1 |CYP2C19|rs12248560|C/C
-Sample1 |CYP2C9 |rs1057910 |A/A
-Sample1 |CYP2D6 |rs1065852 |G/G
-Sample1 |CYP3A5 |rs10264272|C/C
-Sample2 |CYP2B6 |rs28399499|
-Sample2 |CYP2C19|rs12248560|
-Sample2 |CYP2C9 |rs1057910 |
-Sample2 |CYP2D6 |rs1065852 |
-Sample2 |CYP3A5 |rs10264272|
+Sample1 |CYP2B6 |rs28399499|T/T     |
+Sample1 |CYP2C19|rs12248560|C/C     |
+Sample1 |CYP2C9 |rs1057910 |A/A     |
+Sample1 |CYP2D6 |rs1065852 |G/G     |
+Sample1 |CYP3A5 |rs10264272|C/C     |
+Sample2 |CYP2B6 |rs28399499|T/T     |
+Sample2 |CYP2C19|rs12248560|C/C     |
+Sample2 |CYP2C9 |rs1057910 |A/A     |
+Sample2 |CYP2D6 |rs1065852 |G/G     |
+Sample2 |CYP3A5 |rs10264272|C/T     |
 
-Please note that we used only one SNP for each Gene to simplify the provided example. You can find a complete list of examples in the [samples](NeuroPGx/data/samples/) folder.
+Please note that we used only one SNP for each Gene to simplify the provided example. You can find a complete list of examples in the [samples](https://github.com/Andreater/NeuroPGx/tree/main/data/samples) folder.
 
 ## License
 
