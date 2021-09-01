@@ -126,15 +126,15 @@ server <- function(input, output) {
     
     # Download operation
     output$download_item <- downloadHandler(filename    = function() {paste("data-",Sys.Date(), ".csv", sep = "")},
-                                            content     = function(file) {write.csv(ac(), file)},
+                                            content     = function(file) {write.csv(ac(), file, row.names = FALSE)},
                                             contentType = ".csv")
     
     output$download_item_plain <- downloadHandler(filename    = function() {paste("plain-",Sys.Date(), ".csv", sep = "")},
-                                                  content     = function(file) {write.csv(drug.list()[[1]], file)},
+                                                  content     = function(file) {write.csv(drug.list()[[1]], file, row.names = FALSE)},
                                                   contentType = ".csv")
     
     output$download_item_interaction <- downloadHandler(filename    = function() {paste("interaction-",Sys.Date(), ".csv", sep = "")},
-                                                        content     = function(file) {write.csv(drug.list()[[2]], file)},
+                                                        content     = function(file) {write.csv(drug.list()[[2]], file, row.names = FALSE)},
                                                         contentType = ".csv")
     
     # Pheno summary plot
