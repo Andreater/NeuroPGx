@@ -1,6 +1,9 @@
 # References ----
 load(file = "data/reference/drugs.rdata")
 
+####Fix reference issues####
+comb_drugs$Outcome = comb_drugs$Outcome %>% stringr::str_remove_all(pattern = "[\r\n]") %>% stringr::str_squish()
+
 ####Preprocess data####
 pharm_sum <- function(data, comb_drugs, diplo_drugs, pheno_drugs) {
   data = data %>% 
