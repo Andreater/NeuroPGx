@@ -60,4 +60,5 @@ NeuroPGx is licensed under the <a href="https://tldrlegal.com/license/gnu-affero
 ## Papers
 
 **Precision Medicine into Clinical Practice: A Web-Based Tool Enables Real-Time Pharmacogenetic Assessment of Tailored Treatments in Psychiatric Disorders** 
-https://www.mdpi.com/2075-4426/11/9/851/htm
+
+Link to paper: https://www.mdpi.com/2075-4426/11/9/851/htm
