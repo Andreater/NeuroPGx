@@ -112,30 +112,30 @@ server <- function(input, output) {
     output$download_button <- renderUI({
         req(ac())
         downloadButton(outputId = "download_item", 
-                       label    = "Download .csv") })
+                       label    = "Download .xlsx") })
     
     output$download_plain <- renderUI({
         req(drug.list())
         downloadButton(outputId = "download_item_plain", 
-                       label    = "Download .csv") })
+                       label    = "Download .xlsx") })
     
     output$download_interaction <- renderUI({
         req(drug.list())
         downloadButton(outputId = "download_item_interaction", 
-                       label    = "Download .csv") })
+                       label    = "Download .xlsx") })
     
     # Download operation
-    output$download_item <- downloadHandler(filename    = function() {paste("data-",Sys.Date(), ".csv", sep = "")},
-                                            content     = function(file) {write.csv(ac(), file, row.names = FALSE)},
-                                            contentType = ".csv")
+    output$download_item <- downloadHandler(filename    = function() {paste("data-",Sys.Date(), ".xlsx", sep = "")},
+                                            content     = function(file) {write.xlsx(ac(), file)},
+                                            contentType = ".xlsx")
     
-    output$download_item_plain <- downloadHandler(filename    = function() {paste("plain-",Sys.Date(), ".csv", sep = "")},
-                                                  content     = function(file) {write.csv(drug.list()[[1]], file, row.names = FALSE)},
-                                                  contentType = ".csv")
+    output$download_item_plain <- downloadHandler(filename    = function() {paste("plain-",Sys.Date(), ".xlsx", sep = "")},
+                                                  content     = function(file) {write.xlsx(drug.list()[[1]], file)},
+                                                  contentType = ".xlsx")
     
-    output$download_item_interaction <- downloadHandler(filename    = function() {paste("interaction-",Sys.Date(), ".csv", sep = "")},
-                                                        content     = function(file) {write.csv(drug.list()[[2]], file, row.names = FALSE)},
-                                                        contentType = ".csv")
+    output$download_item_interaction <- downloadHandler(filename    = function() {paste("interaction-",Sys.Date(), ".xlsx", sep = "")},
+                                                        content     = function(file) {write.xlsx(drug.list()[[2]], file)},
+                                                        contentType = ".xlsx")
     
     # Pheno summary plot
     pl1 <- reactive({pheno_sum(data = ac())})
